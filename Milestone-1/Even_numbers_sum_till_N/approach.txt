@@ -1,0 +1,1 @@
+This question was solved by simply using a single loop and check along the way if a number is even or not and if it was then it was added to sum variable which was later returned as solution.
