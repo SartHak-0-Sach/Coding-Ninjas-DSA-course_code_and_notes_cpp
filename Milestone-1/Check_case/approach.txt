@@ -1,1 +1,0 @@
-This question was solved by simply using if else conditional statements, either using ASCII value or using characters.
