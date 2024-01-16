@@ -1,31 +1,24 @@
-#include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
 
-bool checkPalindrome(string str) {
-    int i = 0;
-    int j = str.size()-1;
-    bool flag = true;
-    while(i<j)
+void reverse(char input[], int start, int end) {
+  while (start < end)
     {
-        if(str[i]!=str[j])
-        {
-            flag = false;
-            break;
-        }
-        i++;
-        j--;
+        swap(input[start++], input[end--]);
     }
-    return flag;
 }
 
-int main(int argc, char const *argv[])
-{
-  string str;
-  cin>>str;
-  if(checkPalindrome(str))
-  cout<<"Palindrome"<<endl;
-  else
-  cout<<"Not a Palindrome"<<endl;
-  return 0;
+void reverseStringWordWise(char input[]) {
+    int startIndex = -1;
+    int i = 0;
+    for(; input[i]!='\0'; i++)
+    {
+        if(input[i]==' ')
+        {
+            reverse(input, startIndex+1, i-1);
+            startIndex = i;
+        }
+    }
+    reverse(input, startIndex+1, i-1);
+    reverse(input, 0, i-1);
 }
