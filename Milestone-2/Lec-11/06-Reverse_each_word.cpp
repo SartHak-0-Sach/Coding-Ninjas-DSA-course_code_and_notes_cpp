@@ -3,13 +3,6 @@
 #include <cstring>
 using namespace std;
 
-// void swap(char a, char b)
-// {
-//     char c = a;
-//     a=b;
-//     b=c;
-// }
-
 int main()
 {
     string str;
@@ -22,12 +15,6 @@ int main()
         {
             end = i-1;
              reverse(str.begin() + start, str.begin() + end + 1);
-            // while(start<end)
-            // {
-            //     swap(str[start], str[end]);
-            //     start++;
-            //     end--;
-            // }
             start=i+1;
         }
     }
