@@ -1,31 +1,42 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-bool checkPalindrome(string str) {
-    int i = 0;
-    int j = str.size()-1;
-    bool flag = true;
-    while(i<j)
+void spiralPrint(int **input, int nRows, int nCols) {
+  if(nRows ==0 || nCols == 0)
+  {
+    return;
+  }
+  int nElements = nRows * nCols ;
+  int colStart, colEnd, rowStart, rowEnd, i, j;
+  colStart = 0;
+  colEnd = nCols - 1;
+  rowStart = 0;
+  rowEnd = nRows - 1;
+  int count  =0; 
+  while (count <nElements) {
+    for (j = colStart; count <nElements &&j <= colEnd; j++) 
     {
-        if(str[i]!=str[j])
-        {
-            flag = false;
-            break;
-        }
-        i++;
-        j--;
+      cout << input[rowStart][j] << ' ';
+      count++;
     }
-    return flag;
-}
-
-int main(int argc, char const *argv[])
-{
-  string str;
-  cin>>str;
-  if(checkPalindrome(str))
-  cout<<"Palindrome"<<endl;
-  else
-  cout<<"Not a Palindrome"<<endl;
-  return 0;
+    rowStart++;
+    for (i = rowStart;count <nElements && i <= rowEnd; i++) 
+    {
+      cout << input[i][colEnd] << ' ';
+      count++;
+    }
+    colEnd--;
+    for (j = colEnd;count <nElements && j >= colStart; j--) 
+    {
+      cout << input[rowEnd][j] << ' ';
+      count++;
+    }
+    rowEnd--;
+    for (i = rowEnd;count <nElements && i >= rowStart; i--) 
+    {
+      cout << input[i][colStart] << ' ';
+      count++;
+    }
+    colStart++;
+  }
 }

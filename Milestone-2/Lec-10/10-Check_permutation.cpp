@@ -1,31 +1,22 @@
+#include <algorithm>
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 
-bool checkPalindrome(string str) {
-    int i = 0;
-    int j = str.size()-1;
-    bool flag = true;
-    while(i<j)
-    {
-        if(str[i]!=str[j])
-        {
-            flag = false;
-            break;
-        }
-        i++;
-        j--;
-    }
-    return flag;
-}
+bool isPermutation(char input1[], char input2[]) {
+    int size1 = strlen(input1);
+    int size2 = strlen(input2);
 
-int main(int argc, char const *argv[])
-{
-  string str;
-  cin>>str;
-  if(checkPalindrome(str))
-  cout<<"Palindrome"<<endl;
-  else
-  cout<<"Not a Palindrome"<<endl;
-  return 0;
+    if(size1!=size2)
+    return false;
+
+    std::sort(input1, input1+size1);
+    std::sort(input2, input2+size2);
+
+    for(int i = 0; i<size1; i++)
+    {
+        if(input1[i]!=input2[i])
+        return false;
+    }
+    return true;
 }
