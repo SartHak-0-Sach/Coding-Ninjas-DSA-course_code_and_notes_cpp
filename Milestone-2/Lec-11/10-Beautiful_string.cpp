@@ -1,26 +1,47 @@
-#include <bits/stdc++.h> 
-#include <iostream>
 #include <cstring>
+#include <string>
+#include <climits>
 using namespace std;
 
-
-void printSubstrings(string input) {
-    int count = 0;
-    for(int i = 0; i < input.size(); i++)
+int makeBeautiful(string str)
+{
+    int n = str.length();
+    int t1 = 0, t2 = 0;
+    char s1 = '0', s2 = '1';
+    for (int i = 0; i < n; i++)
     {
-        int j = i+count;
-        count++;
-        for(int k = i; k<=j; k++)
+        if (str[i] == '1')
         {
-            cout<<input[k];
+            if (s1 == '0')
+            {
+                t1++;
+            }
+            else
+            {
+                t2++;
+            }
         }
-        cout<<endl;
+        else
+        {
+            if (s1 == '1')
+            {
+                t1++;
+            }
+            else
+            {
+                t2++;
+            }
+        }
+        if (s1 == '1')
+        {
+            s1 = '0';
+            s2 = '1';
+        }
+        else
+        {
+            s1 = '1';
+            s2 = '0';
+        }
     }
-}
-
-int main() {
-    string input;
-    getline(cin, input);
-    printSubstrings(input);
-    return 0;
+    return min(t1, t2);
 }
