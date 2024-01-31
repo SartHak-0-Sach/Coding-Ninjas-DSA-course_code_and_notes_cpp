@@ -1,25 +1,19 @@
 #include <iostream>
+#include <cstring>
+#include <string>
 using namespace std;
 
-void removeAllOccurrencesOfChar(string input, char c)
-{
-  string ans = "";
-  for (int i = 0; i < input.size(); i++)
-  {
-    if (input[i] != c)
-    {
-      ans = ans + input[i];
-    }
-  }
-  cout << ans << endl;
-}
+void removeAllOccurrencesOfChar(char input[], char c) {
 
-int main(int argc, char const *argv[])
-{
-  char c;
-  cin >> c;
-  string input;
-  cin >> input;
-  removeAllOccurrencesOfChar(input, c);
-  return 0;
+    int n = strlen(input);
+
+    int index = 0;
+    
+    for(int i = 0; i<n; i++)
+    {
+        if(input[i]!=c)
+        swap(input[i], input[index++]);
+    }
+
+    input[index] = '\0';
 }

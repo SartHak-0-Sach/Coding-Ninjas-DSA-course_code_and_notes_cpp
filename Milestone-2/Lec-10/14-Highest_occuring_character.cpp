@@ -1,31 +1,28 @@
 #include <iostream>
 #include <string>
+#include <cstring>
 using namespace std;
 
-bool checkPalindrome(string str) {
-    int i = 0;
-    int j = str.size()-1;
-    bool flag = true;
-    while(i<j)
-    {
-        if(str[i]!=str[j])
-        {
-            flag = false;
-            break;
-        }
-        i++;
-        j--;
-    }
-    return flag;
-}
+#define ASCII_SIZE 256
+// input - given string
+char highestOccurringChar(char str[]) {
+  char result;
+  int i, len;
+  int max = -1;
 
-int main(int argc, char const *argv[])
-{
-  string str;
-  cin>>str;
-  if(checkPalindrome(str))
-  cout<<"Palindrome"<<endl;
-  else
-  cout<<"Not a Palindrome"<<endl;
-  return 0;
+  int freq[256] = {0};
+
+  len = strlen(str);
+
+  for (i = 0; i < len; i++) {
+    freq[str[i]]++;
+  }
+
+  for (i = 0; i < len; i++) {
+    if (max < freq[str[i]]) {
+      max = freq[str[i]];
+      result = str[i];
+    }
+  }
+  return result;
 }
