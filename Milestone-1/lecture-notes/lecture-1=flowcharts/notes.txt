@@ -1,0 +1,7 @@
+Hello everyone and welcome to this coding ninjas DSA course, in lecture-1 there were total of 5 videos all have been covered here in this one single document as in lecture-1 there was no code part involved, to see more such notes you can refer to my love babbar playlist notes and striver a2z course notes also, let's start now-
+
+These 5 videos talk about how we should approach a problem when we have a first look at it, first seeing the end goal what we are solving here and what the given condition is, then only we can start thinking of solution. To find the solution it is important to see the relation of all the parameters in the situation with the variable relevant to getting the end goal. This is where flowcharts come into play as they help us visualize a problem and the workflow of its solution.
+
+Then we learnt about some of the basic and little advanced flowchart making like of finding whether a number is even or odd and some advanced like finding how many primes come from 1 to n.
+
+For understanding these things properly, you need to learn the basics of programming like variables, loops, operators etc.
