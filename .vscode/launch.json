@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/saksh/OneDrive/Desktop/github/Coding-Ninjas-DSA-solutions-cpp/Milestone-1=Intro_to_C++/lecture-notes/lecture-2=Getting_started",
+      "program": "c:/Users/saksh/OneDrive/Desktop/github/Coding-Ninjas-DSA-solutions-cpp/Milestone-1=Intro_to_C++/lecture-notes/lecture-2=Getting_started/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

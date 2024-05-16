@@ -1,0 +1,5 @@
+In these lectures we learnt more about conditionals(if-else statements) and learnt a new variant of the same which is else if statement.
+
+Then we dive deep into learning about loops, why are they useful and what are their types.
+
+While loop is one such type that we read about whose application can be seen in the code file mentioned beside this file.

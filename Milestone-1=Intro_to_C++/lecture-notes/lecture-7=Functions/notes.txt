@@ -1,0 +1,1 @@
+In these lectures we learned more about functions, what they are used for, why are they useful to us and how to implement them inspite of having loops which can't do what functions can.

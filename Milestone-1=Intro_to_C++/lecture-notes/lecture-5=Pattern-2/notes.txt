@@ -1,0 +1,1 @@
+In these lectures we wrote code about making patterns as shown in the questions folder
