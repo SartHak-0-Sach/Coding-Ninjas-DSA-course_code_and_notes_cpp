@@ -1,0 +1,1 @@
+In this lecture we learnt about 2-D arrays and why we need arrays of more than one dimension, what all can be the shortcomings of using these arrays so we should use them only when needed, and how they are stored in memory(2-ways column first and row first)

@@ -1,0 +1,12 @@
+In these lectures we learned about searching and sorting and what is the significance of these concepts.
+
+Here we learned about 2 types of searching techniques that is-
+1) Linear Search
+2) Binary Search
+
+And in sorting we read about 5 types of sorting which are-
+1) Bubble Sort
+2) Selection Sort
+3) Insertion Sort
+4) Merge Sort
+5) Quick Sort

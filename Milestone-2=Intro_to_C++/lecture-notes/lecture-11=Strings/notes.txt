@@ -1,0 +1,1 @@
+In this lecture we learned about strings, why are they useful, how to implement them in code and what are all the string functions useful to us

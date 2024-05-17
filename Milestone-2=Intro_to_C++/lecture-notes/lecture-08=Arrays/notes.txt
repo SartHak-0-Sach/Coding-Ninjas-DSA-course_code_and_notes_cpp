@@ -1,0 +1,1 @@
+In these lectures we learned more about arrays, why are arrays useful, what all stuff are they used for, and how to implement and work with them.
