@@ -1,0 +1,15 @@
+In these lectures we are going to be reading about dynamic allocation, what it is, why is it important for us to learn and how to implement it
+
+Firstly, we learnt about one important concept of pointers that is why we write int* rather than making a separate datatype called pointer in c++ language, the answer is because of different sizes of different datatypes mentioning which before a pointer tells the compiler how many values does it need to read before stopping.
+
+Then we learnt about little endian and big endian systems, last byte is kept first in little endian and vice versa when storing in memory
+
+Then we got to know about arrays, how they have to be fixed in size during compile time and we can't tell their memory in run-time according to our use which is not ideal as a lot of memory may get wasted. This is where dynamic allocation comes in where memory is not stored in stack but in another heap where you can allocate variable size arrays but condition is it is a good practice to delete this array at the end of program.
+
+Then we got to know about inline functions, when are they used and how are they implemented
+
+Also we learned about how to give default values to arguments in functions by directly allocating value to them in bracket which will be taken up if not provided while calling it and is considered as default whose behaviour goes from right to left
+
+We also learned about macros, how to define macros, how are they different from constant variables and about global variables and why are they not recommended
+
+Lastly we learned about constant variables, what all are its benefits, why are they often used in functions as arguments and how are they implemented.

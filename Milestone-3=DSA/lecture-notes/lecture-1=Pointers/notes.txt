@@ -1,0 +1,17 @@
+In these lectures we learned about pointers, one of the most important concept in programming.
+
+Here we are going to learn about what pointers are, why are they needed, how are they stored in memory, how are they implemented, how much space they take up in memory and if that space is constant for all types of pointers with respect to all datatypes of which pointers can be created.
+
+First we learned about symbol table, where some pre-defined terms and the user defined terms are stored from where pointers access variables.
+
+What is the way addresses are written in programming(about hexadecimal form)
+
+Then we learned about pointer arithmatic
+
+Then we moved on to learn about pointers application in arrays
+
+Then we learned about what is the difference between character pointer and integer pointer and how they fnuction differently in case of arrays
+
+Then we learned about pointers in functions, how are they passed, and what all situations are there where pointers can be useful in functions rather than passing through other ways
+
+Lastly we read about various features of double pointers, what are they used for, in what cases can they be useful and how are they implemented.
