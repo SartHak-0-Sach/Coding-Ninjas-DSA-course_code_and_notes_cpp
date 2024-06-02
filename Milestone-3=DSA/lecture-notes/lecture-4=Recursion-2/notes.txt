@@ -1,0 +1,11 @@
+This is the second set of lectures on recursion where we will be catering to some advanced concepts related to recursion.
+
+Starting off with learning about recursion in strings, we learnt how and when do we need to use recursion in strings and what are the problems we can encounter in relation to null character '\0' when we do string manipulation and size manipulation.
+
+Then we learnt about merge sort and quick sort algo, their dry run and how to implement them recursively.
+
+Then we revisited some advanced concepts of recursions in string which will come later on again during dynamic programming such as finding all subsequences of a string, now for this we need to know the difference between what are prefixes of a string, subsequences of a string, subsets/substrings of given string etc.
+
+Their code is present in code file of this lecture.
+
+With applying a similar approach we did the phone keypad problem using same recursion logic as we applied previously on find subsequences of a string.

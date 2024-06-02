@@ -1,0 +1,7 @@
+In this set of lectures we will cater to introduction to recursion.
+
+First we started off with what is recursion, why we need it and how to implement it. Then we learned about its basic structure(base case, operation, recursive call)
+
+To understand recursion better we must apply PMI (principle of mathematical induction) that we studied during school.
+
+Rest only approaches on how to solve the given questions were discussed which are given in the solutions folder.

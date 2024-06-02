@@ -1,0 +1,10 @@
+In these lectures we learnt about time and space complexity to study which algorithm is faster in saving time and which data structure is better in managing space well for all best average and worst case of each problem statement accordingly.
+
+We started off by learning why we need to calculate complexities, and how to do it theoretically instead of putting tracker and manually implementing each algo and compare them.
+
+Then we learnt about few cases of complexity calculation that are a must for understanding how recursion works and how we calculate its complexity in different cases.
+
+These cases whose time and space complexity calculation should be known by heart are-
+1) All iterative searching and sorting algorithms
+2) Theoretical analysis of recursive algorithm. Example- Fibonacci algo(written in code file)
+3) Merge sort, quick sort and binary search recursive algo 
