@@ -19,6 +19,10 @@ This repository serves as a comprehensive resource hub for mastering data struct
 - Solutions for various data structures like stacks, queues, arrays, and more.
 - Detailed explanations and optimized approaches for algorithm-related questions.
 
+### !!! BONUS SECTION
+
+I am currently working on adding a new bonus section to this repository with System Design notes for timely preparation for system design interviews too, which is considered one of the most essential components of preparation for SDE/SWE roles in getting a job at top tech companies and industry giants!!
+
 ## Getting Started
 
 To start utilizing the resources in this repository:
